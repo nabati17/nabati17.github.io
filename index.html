@@ -7,6 +7,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
+    <link
+      rel="icon"
+      type="image/x-"
+      href="img/boy.png"
+    />
 
     <!-- Boostrap CSS -->
     <link
@@ -22,15 +27,23 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
 
+    <!--AOS CSS-->
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+
     <!-- My Css -->
     <link
       rel="stylesheet"
       href="style.css"
     />
 
-    <title>Hello, world!</title>
+    <title>Portofolio Asnabah</title>
   </head>
   <body id="home">
+    <!-- cdn typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top"
@@ -38,7 +51,7 @@
     >
       <div class="container">
         <a
-          class="navbar-brand fs-2 fw-bold"
+          class="navbar-brand fs-2 fw-normal"
           href="#"
           >I'm Asnabah</a
         >
@@ -101,8 +114,8 @@
         width="200px"
         class="rounded-circle img-thumbnail"
       />
-      <h1 class="display-4">Asnabah</h1>
-      <p class="lead">I'm Junior Web Developer | Student</p>
+      <h3 class="display-4 fs-2">Asnabah</h3>
+      <p class="bawahan lead"></p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"
@@ -125,12 +138,28 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores delectus quos itaque voluptas aliquam iure quo quasi fugiat maiores dolor?</p>
+          <div
+            class="col-md-10"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <p>
+              saya adalah mahasiswa semester 6 jurusan Informatika di Universitas Bandar Lampung yang memiliki minat besar dalam pemrograman web. Saya telah mempelajari bahasa pemrograman seperti HTML, CSS, JavaScript, dan Bootstrap. Saya
+              percaya bahwa dengan terus belajar, saya dapat meningkatkan keterampilan dan kualitas dalam pengembangan web
+            </p>
           </div>
-          <div class="col-md-4">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit officia, atque hic est reprehenderit, nisi perferendis animi ut expedita sequi, distinctio possimus! Dolorem, illo optio?</p>
-          </div>
+          <!-- <div
+            class="col-md-5"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <img
+              src="img/naba.png"
+              alt=""
+              width="300px
+              "
+            />
+          </div> -->
         </div>
       </div>
       <svg
@@ -167,31 +196,36 @@
               /></a>
 
               <div class="card-body">
-                <p class="card-text text-dark">Membuat tampilan Faccebook tahun 2012 menggunakan HTMl dan CSS murni</p>
+                <p class="card-text text-dark">Membuat tampilan sederhana beranda login Facebook tahun 2012 menggunakan HTMl dan CSS murni.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img
-                src="..."
-                class="card-img-top"
-                alt="..."
-              />
+              <a href="https://layout-booking-hotel.netlify.app/">
+                <img
+                  src="img/LayoutHotel.png"
+                  class="card-img-top"
+                  alt="Layout"
+                />
+              </a>
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text text-dark">Membuat tampilan layout booking hotel sederhana dengan html dan css framework Boostrap.</p>
               </div>
             </div>
           </div>
           <div class="col-md-4 mb-3">
             <div class="card">
-              <img
-                src="..."
-                class="card-img-top"
-                alt="..."
-              />
+              <a href="https://todo-list-asnabah.netlify.app">
+                <img
+                  src="img/todolist.png"
+                  class="card-img-top"
+                  alt="Layout"
+                  height="215px"
+                />
+              </a>
               <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text text-dark">Membuat todolist menggunakan JavaScript dengan fitur Tim Now, 2024 Counter dan Regex Submit Validation min 3 char Per Task.</p>
               </div>
             </div>
           </div>
@@ -364,6 +398,21 @@
     </footer>
     <!-- Akhir Footer -->
 
+    <script>
+      var typed = new Typed('.bawahan', {
+        strings: [" I'm Junior Web Developer | Student"],
+        backSpeed: 40,
+        typeSpeed: 80,
+      });
+      // var typed = new Typed('.bawahan', {
+      //   // Waits 1000ms after typing "First"
+      //   strings: [" I'm Junior Web Developer ", '| Student'],
+      //   loop: true,
+      //   backSpeed: 40,
+      //   typeSpeed: 80,
+      // });
+    </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -395,6 +444,12 @@
             console.log('Success!', response);
           })
           .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
       });
     </script>
   </body>
