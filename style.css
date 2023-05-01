@@ -2,6 +2,8 @@
 
 * {
   font-family: 'Poppins', sans-serif;
+  /* position: relative; */
+  /* min-height: 100%; */
 }
 
 .jumbotron {
@@ -21,4 +23,8 @@ section {
 
 .bawahan {
   display: inline;
+}
+
+footer {
+  border: none;
 }
